@@ -49,10 +49,11 @@ body {
 }
 
 .profile-image img {
-    width: 180px;
-    height: 180px;
-    border-radius: 12px;
-    object-fit: cover;
+    width: 400px;               /* display size */
+    height: 400px;              /* force square crop */
+    border-radius: 9999px;      /* perfect circle */
+    object-fit: cover;          /* fills the circle, no squish */
+    object-position: center top;/* adjust focus (try center 20% if needed) */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
